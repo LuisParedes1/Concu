@@ -1,0 +1,27 @@
+[package]
+name = "channels_crossbeam"
+version = "0.1.0"
+authors = ["Pablo Deymonnaz <deymonnaz@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "ejemplo1"
+path = "ejemplo1/main.rs"
+
+[[bin]]
+name = "ejemplo2"
+path = "ejemplo2/main.rs"
+
+[[bin]]
+name = "ejemplo3"
+path = "ejemplo3/main.rs"
+
+[[bin]]
+name = "ejemplo4"
+path = "ejemplo4/main.rs"
+
+[dependencies]
+crossbeam = "0.8.0"
+crossbeam-channel = "0.5"
