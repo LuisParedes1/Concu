@@ -1,101 +1,149 @@
-use std::thread::spawn;
+use std::collections::HashMap;
+use std::{env, thread};
 use std::fs::{File, read_dir};
 use std::io::{BufRead, BufReader};
-use std::io::*;
+
+use rayon::prelude::{IntoParallelRefIterator, ParallelBridge, ParallelIterator};
+use std::path::PathBuf;
+use std::time::{Instant, Duration};
 
 
-fn process_files(filenames: Vec<String>) -> Result<()> {
-    for document in filenames {
-        let text = load(&document)?; 
-        let results = process(text); 
-        save(&document, results)?;
-    }
-    Ok(())
+
+// Calcula la cantidad total de vistas por canal (sumando todos los archivos .csv)
+fn vistas_por_canal() -> HashMap<String, i64>{
+
+
+    let result = read_dir(concat!(env!("CARGO_MANIFEST_DIR"), "/data")).unwrap() // Veo los archivos dentro del directorio
+        
+        .map(|d| d.unwrap().path())  // Cada archvio obtengo su path
+        
+        .flat_map(|path| { // Guardo en una unica lista todos los paths y para cada path aplica map
+
+            let file = File::open(path); // Leo el archivo
+
+            let reader = BufReader::new(file.unwrap()); // Cargo todo el archivo en un buffer
+            
+            reader.lines()  // Devuelvo el buffer con el archivo
+       
+        }).map(|l| { // Para cada buffer aplica la funcion map
+
+            let line = if let Ok(l) = l{ // Leo cada linea del buffer
+                l
+            } else{
+                return Err("invalid line")
+            };
+            
+            let video_data = line.split(',').collect::<Vec<&str>>();  // Separo cada campo
+
+
+            let canal =  if let Some(i) = video_data.get(3){
+                *i
+            }else{
+                return Err("invalid line")
+            };
+            
+
+            let visitas =  if let Some(v) = video_data.get(7){
+                                    *v
+                                }else{
+                                    return Err("invalid line")
+                                };
+                            
+            let v =  if let Ok(i) = visitas.parse::<i64>(){
+                i
+            }else{
+                return Err("invalid line")
+            };
+
+            let mut visitas_canal = HashMap::new();
+
+            *visitas_canal.entry(canal.to_string()).or_insert(v) += v;
+
+            Ok(visitas_canal)
+        }).fold(HashMap::new(), |mut acumulador, video_data| {
+            if let Ok(vd) = video_data{
+                vd.iter().for_each(|(k, v)| *acumulador.entry(k.clone()).or_insert(0) += v);
+            }
+            
+            acumulador
+        });
+
+        result
+}
+
+// Calcula la cantidad total de vistas por canal (sumando todos los archivos .csv) de manera concurrente
+fn vistas_por_canal_par() -> HashMap<String, i64>{
+    
+    let result = read_dir(concat!(env!("CARGO_MANIFEST_DIR"), "/data")).unwrap() // Veo los archivos dentro del directorio 
+    .map(|d| d.unwrap().path())
+    .collect::<Vec<PathBuf>>()
+    .par_iter()  // Cada archvio obtengo su path
+        .flat_map(|path| { // Guardo en una unica lista todos los paths y para cada path aplica map
+
+            let file = File::open(path); // Leo el archivo
+            let reader = BufReader::new(file.unwrap()); // Cargo todo el archivo en un buffer
+            reader.lines().par_bridge()  // Devuelvo el buffer con el archivo
+   
+    }).map(|l| { // Para cada buffer aplica la funcion map
+
+        let line = if let Ok(l) = l{ // Leo cada linea del buffer
+            l
+        } else{
+            return Err("invalid line")
+        };
+        
+        let video_data = line.split(',').collect::<Vec<&str>>();  // Separo cada campo
+
+
+        let canal =  if let Some(i) = video_data.get(3){
+            *i
+        }else{
+            return Err("invalid line")
+        };
+        
+
+        let visitas =  if let Some(v) = video_data.get(7){
+                                *v
+                            }else{
+                                return Err("invalid line")
+                            };
+                        
+        let v =  if let Ok(i) = visitas.parse::<i64>(){
+            i
+        }else{
+            return Err("invalid line")
+        };
+
+        let mut visitas_canal = HashMap::new();
+
+        *visitas_canal.entry(canal.to_string()).or_insert(v) += v;
+
+        Ok(visitas_canal)
+    }).reduce(|| Ok(HashMap::new()), |mut acumulador, video_data| {
+        if let Ok(vd) = video_data{
+            vd.iter().for_each(|(k, v)| *acumulador.as_mut().unwrap().entry(k.clone()).or_insert(0) += v);
+        }
+        
+        acumulador
+    });
+
+    result.unwrap()
 }
 
 fn main() {
 
-    /* Es equivalente a estas 3 lineas
-
-        read_dir(concat!(env!("CARGO_MANIFEST_DIR"), "/data")).unwrap()
-        .map(|d| d.unwrap().path())
-        .collect::<Vec<PathBuf>>()
-    */
-
-    let file = if let Ok(dir) = read_dir(concat!(env!("CARGO_MANIFEST_DIR"), "/data")){
-        dir
-    }else{
-        return;
-    };
+    let start = Instant::now();
+    let result = vistas_por_canal();
+    println!("El tiempo total de manera secuencial es {:?}", start.elapsed());
     
-    let mut paths = vec![];
+    // //println!("{:?}", result);
+    println!("La cantidad total de canales es {}", result.keys().len());
 
-    for d in file{
-        if let Ok(dir_entry) = d{
-            paths.push(dir_entry.path())
-        }
-    }
+    let start = Instant::now();
+    let result_par = vistas_por_canal_par();
+    println!("El tiempo total concurrentemente es {:?}", start.elapsed());
 
+    //println!("{:?}", result_par);
+    println!("La cantidad total de canales es {}", result_par.keys().len());
 
-    /* Es equivalente a esto
-
-        .par_iter()
-        .flat_map(|path| {
-            let file = File::open(path);
-            let reader = BufReader::new(file.unwrap());
-            reader.lines().par_bridge()
-        })
-        .map(|l| {
-            let line = l.unwrap();
-            let words = line.split(' ');
-            thread::sleep(Duration::from_millis(100));
-            let mut counts = HashMap::new();
-            words.for_each(|w| *counts.entry(w.to_string()).or_insert(0) += 1);
-            counts
-        })
-        .reduce(|| HashMap::new(), |mut acc, words| {
-            words.iter().for_each(|(k, v)| *acc.entry(k.clone()).or_insert(0) += v);
-            acc
-        });
-    
-    */
-
-
-    
-    let mut thread_handlers = vec![];
-
-    // Para cada archivo
-    for p in paths{
-        
-
-        thread_handlers.push(spawn(move || {
-            
-            let file = match File::open(p){
-                Ok(file) => file,
-                Err(_) => return
-            };
-    
-            let reader = BufReader::new(file);
-            let lines = reader.lines();
-
-
-            //let words = lines.split(' ');
-
-            
-
-        }
-        ));
-    }
-
-    for thread_handler in thread_handlers{
-        if let Ok(_) = thread_handler.join(){}
-        else{
-            // Error Handling
-            println!("Algo raro sucedio")
-        }
-    }
-
-    
-    
-    // println!("Llegue al final exitosamente!");
 }

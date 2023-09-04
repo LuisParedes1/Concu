@@ -1,11 +1,13 @@
-# Implementar WordCount usando Fork-Join
+# Tarea
 
-Contar la cant de veces que se repite cada palabra en el archivo dado.
+* Descargar el dataset de Kaggle "Trending YouTube Video Statistics"
+https://www.kaggle.com/datasets/datasnaek/youtube-new
 
-* Map 
-    * Tomar de potencialmente varios archivos de texto, las lineas
-    * De las lineas, las palabras
-    * De las palabras sus frecuencias locales
+* Crear un programa map-reduce con Ryon que calcule la cantidad total de
+vistas por channel_title. Comparar tiempos de ejecución con y sin iteradores
+paralelos.
 
-* Reduce
-    * Combinar las frecuencias locales en una unica tabla con todas las frecuencias
+*  Diagramar el DAG (Directed Acylic Graph) y estimar el mínimo tiempo posible ideal de ejecución en 4
+CPUs si son 10 archivos y cada archivo tiene en promedio 35 mil filas.
+
+-> El diagrama DAG se encuentra en el siguiente [Notion](https://www.notion.so/mis-notas/Tarea-f244c035f6e54dd4824d1acd279117d1?pvs=4#5df1b00aad3540d5bf424ecf70633e25)
