@@ -11,3 +11,5 @@ paralelos.
 CPUs si son 10 archivos y cada archivo tiene en promedio 35 mil filas.
 
 -> El diagrama DAG se encuentra en el siguiente [Notion](https://www.notion.so/mis-notas/Tarea-f244c035f6e54dd4824d1acd279117d1?pvs=4#5df1b00aad3540d5bf424ecf70633e25)
+
+-> La data se debe descargar y ubicar dentro de la carpeta data. Solo poner los archivos .csv y borrar los .json
