@@ -57,7 +57,7 @@ fn vistas_por_canal() -> HashMap<String, i64>{
 
             let mut visitas_canal = HashMap::new();
 
-            *visitas_canal.entry(canal.to_string()).or_insert(v) += v;
+            *visitas_canal.entry(canal.to_string()).or_insert(0) += v;
 
             Ok(visitas_canal)
         }).fold(HashMap::new(), |mut acumulador, video_data| {
@@ -116,7 +116,7 @@ fn vistas_por_canal_par() -> HashMap<String, i64>{
 
         let mut visitas_canal = HashMap::new();
 
-        *visitas_canal.entry(canal.to_string()).or_insert(v) += v;
+        *visitas_canal.entry(canal.to_string()).or_insert(0) += v;
 
         Ok(visitas_canal)
     }).reduce(|| Ok(HashMap::new()), |mut acumulador, video_data| {
