@@ -35,6 +35,20 @@ pub async fn many_requests(requests: Vec<(String, u16, String)>)
     // spawn_local guarda futures que luego block_on intercala
     for (host, port, path) in requests {
         handles.push(task::spawn_local(cheapo_owning_request(host,port, path)));
+
+        /* You can get the same eﬀect without the
+            distraction of a wrapper function simply by calling
+            cheapo_request from an async block
+       
+         handles.push(task::spawn_local(async move {
+                cheapo_request(&host, port, &path).await
+            }));
+        
+        Since this is an async move block, its future takes
+        ownership of the String values host and path, just the way
+        a move closure would
+        
+        */
     }
     
     let mut results = vec![];
