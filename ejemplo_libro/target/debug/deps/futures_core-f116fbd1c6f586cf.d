@@ -1,0 +1,11 @@
+/home/luis/Documents/FIUBA/concu/practicas/ejemplo_libro/target/debug/deps/futures_core-f116fbd1c6f586cf.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/future.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/poll.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/atomic_waker.rs
+
+/home/luis/Documents/FIUBA/concu/practicas/ejemplo_libro/target/debug/deps/futures_core-f116fbd1c6f586cf.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/future.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/poll.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/atomic_waker.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/future.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/stream.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/poll.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.28/src/task/__internal/atomic_waker.rs:

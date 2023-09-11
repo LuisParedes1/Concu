@@ -1,0 +1,10 @@
+/home/luis/Documents/FIUBA/concu/practicas/ejemplo_libro/target/debug/deps/async_global_executor-c9447656e9dcb9ef.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/config.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/executor.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/init.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/reactor.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/threading.rs
+
+/home/luis/Documents/FIUBA/concu/practicas/ejemplo_libro/target/debug/deps/async_global_executor-c9447656e9dcb9ef.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/config.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/executor.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/init.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/reactor.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/threading.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/config.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/executor.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/init.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/reactor.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/async-global-executor-2.3.1/src/threading.rs:
