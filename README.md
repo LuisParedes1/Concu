@@ -8,7 +8,7 @@ Util para:
 * Reducen el overhead de memoria ya que son mucho mas liveanas que los threads.
 * Las tareas son más rápidas de crear, más eficiente de pasarle el control a ellas.
 
-No util para 
+No util para:
 * Computo Intensivo
 * Mucho computo y poco I/O
 * No me preocupa la cant de mem ocupada (de threads)
