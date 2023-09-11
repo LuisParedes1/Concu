@@ -28,14 +28,12 @@ mod print_api_response;
 
 
 // tokio let's us use "async" on our main function
-#[tokio::main]
-async fn main() {
+async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
 
     let client = reqwest::Client::new();
 
     let url = format!(
-        "https://api.spotify.com/v1/search?q={query}&type=track,artist",
-        query = "Bizzarap"
+        "https://api.spotify.com/v1/search?q={query_artist}&type=track,artist"
     );
 
     let auth_token = "BQD4xBpOjzUTNKvby2_lfH2b--ZKJ3Zk9DhVUTVdTlJOgwwTNHQ_lTSqh0ulE7DkxH7NKAm5nPL2a6aBN_OB7om5LJfpvJFxPI4OS6FtSnUcJd3KHw4";
@@ -54,19 +52,37 @@ async fn main() {
             match response.status() {
                 reqwest::StatusCode::OK => {
                     match response.json::<APIResponse>().await {
-                        Ok(parsed) => print_tracks(parsed.tracks.items.iter().collect()),
-                        Err(_) => println!("Hm, the response didn't match the shape we expected."),
+                        Ok(parsed) => return Ok(parsed),
+                        Err(_) => return Err("Error Parsing".to_string()),
                     };
                 }
                 reqwest::StatusCode::UNAUTHORIZED => {
-                    println!("Unauthorized Request");
+                    return Err("Unauthorized Request. Check credentials".to_string());
                 }
                 _ => {
-                    println!("Bad Request");
+                    return Err("Bad Request. Check url query".to_string());
                 }
             }
 
         },
-        Err(_) => println!("Error"),
+        Err(_) => return Err("No response".to_string()),
     }
+}
+
+fn main(){
+
+    let query_artist = "Bizzarap".to_string();
+
+    let rt = tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()
+        .unwrap();
+
+    let response = rt.block_on(get_songs_by(query_artist));
+
+    match response {
+        Ok(parsed) => print_tracks(parsed.tracks.items.iter().collect()),
+        Err(mss) => println!("{}",mss),
+    };
+
 }
