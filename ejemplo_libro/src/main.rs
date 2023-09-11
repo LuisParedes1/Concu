@@ -2,7 +2,13 @@ use async_std::task;
 use async_std::io::prelude::*;
 use async_std::net;
 
+/*  Aca realizo el request.
+ Las operaciones con await son las bloqueantes.
 
+ block_on implementa el modelo "piñata" y al finalizar
+ la funcion devuelve el Result<String,Err> como si fuese
+ una funcion sincronica normal
+*/
 async fn cheapo_request(host: &str, port: u16, path: &str)
 -> std::io::Result<String>
 {
