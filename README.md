@@ -1,8 +1,11 @@
-# Practicas de Concu
+# Semana 3
 
-Repos para la materia de [Tecnicas de Programacion Concurrente](https://concurrentes-fiuba.github.io/clases.html)
+Programacion Asincronica
 
-# Practicas
-Las practicas de cada semana las guardo en su respectiva rama asi evitar conflictos con los .targets
+Mas info en el siguiente [Notion](https://mis-notas.notion.site/Semana-3-740b2a0ff9554b6ca3aae6b93da3dd44?pvs=4)
 
-Todas las clases tambien van a estar en la rama "todas"
+# Tarea
+
+Realizar un pequeño utilitario que utilizando el crate reqwest imprima por pantalla los 10 tweets mas destacados de cada uno de los trending topics de Argentina usando las APIs de Twitter.
+
+Ver codigo [aca](./tarea/)
