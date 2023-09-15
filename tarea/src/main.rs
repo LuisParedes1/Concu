@@ -116,7 +116,6 @@ fn main(){
         .unwrap();
 
     // Lo hago bloqueante porque sin las credenciales no puedo hacer nada
-
     let auth_token = match rt.block_on(auth::get_auth_token()) {
         Ok(token) => token,
         Err(mss) => String::from("Error"),

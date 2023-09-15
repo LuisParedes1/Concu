@@ -20,4 +20,6 @@ Mas info en el siguiente [Notion](https://mis-notas.notion.site/Semana-3-740b2a0
 
 Realizar un pequeño utilitario que utilizando el crate reqwest imprima por pantalla los 10 tweets mas destacados de cada uno de los trending topics de Argentina usando las APIs de Twitter.
 
+- No pude acceder a la API de Twitter asi que utilice la API de Spotify. Para una lista de artistas pedi sus canciones mas populares asincronicamente.
+
 Ver codigo [aca](./tarea/)

@@ -75,16 +75,6 @@ mod auth {
 
         let response = rt.block_on(get_auth_token());
 
-        let access_token = match response {
-            Ok(response) => {
-                response
-            },
-            Err(err) => {
-                err
-            }
-        };
-
-        assert!(!access_token.contains("Error"));
-            
+        assert!(!response.unwrap().contains("Error"));       
     }
 }
