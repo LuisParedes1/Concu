@@ -20,14 +20,20 @@
 
 
 use reqwest::{self, header::{AUTHORIZATION, CONTENT_TYPE, ACCEPT}};
+use tokio::{task};
 use crate::api_response::{APIResponse};
 use print_api_response::print_tracks;
 
 mod api_response;
 mod print_api_response;
+mod auth;
 
 
-// tokio let's us use "async" on our main function
+/*
+    Obtengo las mejores canciones de un artista
+
+    Le pego a la API de Spotify y obtengo un JSON con la info de las canciones
+*/
 async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
 
     let client = reqwest::Client::new();
@@ -36,7 +42,9 @@ async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
         "https://api.spotify.com/v1/search?q={query_artist}&type=track,artist"
     );
 
-    let auth_token = "BQD4xBpOjzUTNKvby2_lfH2b--ZKJ3Zk9DhVUTVdTlJOgwwTNHQ_lTSqh0ulE7DkxH7NKAm5nPL2a6aBN_OB7om5LJfpvJFxPI4OS6FtSnUcJd3KHw4";
+    let auth_token = "BQAszi2ase1QJTkbGMoMfctSkSuNtWnsTx3KzVJfIbdATMHTi1CVXDyFvs-wbwODaa2o9nwxWByINlltedCh0VDbgGgb1CpGHJn06L9LbRU2AV8AwJY";
+
+    //let auth_token = auth::get_auth_token();
 
     // chaining .await will yield our query result
     let result = client
@@ -69,20 +77,58 @@ async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
     }
 }
 
+/*
+    Obtengo las mejores canciones de una lista de artistas
+*/
+async fn many_artist_info(artists:Vec<String>) -> Vec<Result<APIResponse, String>>{
+
+    let mut task_handles = vec![];
+
+    // Creo un task por cada artista
+    for artist in artists{
+        task_handles.push(task::spawn(async move {
+            get_songs_by(artist.to_string()).await
+        }));
+    }
+
+    let mut responses = vec![];
+
+    // Espero a que terminen todos los tasks
+    for handle in task_handles {
+        responses.push(
+                        match  handle.await{
+                            Ok(response) => response,
+                            Err(_) => Err("Error".to_string()),
+                        }
+                    );
+    }
+
+    responses
+    
+
+} 
+
+
 fn main(){
 
-    let query_artist = "Bizzarap".to_string();
+    let artists = vec!["Bizzarap".to_string(), "Daft Punk".to_string(), "Maria Becerra".to_string(), "Tini".to_string()];
 
     let rt = tokio::runtime::Builder::new_current_thread()
         .enable_all()
         .build()
         .unwrap();
 
-    let response = rt.block_on(get_songs_by(query_artist));
+    // Lo hago bloqueante porque sin las credenciales no puedo hacer nada
+    //let auth_token = rt.block_on(auth::get_auth_token());
 
-    match response {
-        Ok(parsed) => print_tracks(parsed.tracks.items.iter().collect()),
-        Err(mss) => println!("{}",mss),
-    };
+    let responses = rt.block_on(many_artist_info(artists));
+
+    for response in responses {
+
+        match response {
+            Ok(parsed) => print_tracks(parsed.tracks.items.iter().collect()),
+            Err(mss) => println!("{}",mss),
+        };
+    }
 
 }
