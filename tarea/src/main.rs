@@ -34,17 +34,13 @@ mod auth;
 
     Le pego a la API de Spotify y obtengo un JSON con la info de las canciones
 */
-async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
+async fn get_songs_by(query_artist:String, auth_token:&str) -> Result<APIResponse, String> {
 
     let client = reqwest::Client::new();
 
     let url = format!(
         "https://api.spotify.com/v1/search?q={query_artist}&type=track,artist"
     );
-
-    let auth_token = "BQAszi2ase1QJTkbGMoMfctSkSuNtWnsTx3KzVJfIbdATMHTi1CVXDyFvs-wbwODaa2o9nwxWByINlltedCh0VDbgGgb1CpGHJn06L9LbRU2AV8AwJY";
-
-    //let auth_token = auth::get_auth_token();
 
     // chaining .await will yield our query result
     let result = client
@@ -80,14 +76,15 @@ async fn get_songs_by(query_artist:String) -> Result<APIResponse, String> {
 /*
     Obtengo las mejores canciones de una lista de artistas
 */
-async fn many_artist_info(artists:Vec<String>) -> Vec<Result<APIResponse, String>>{
+async fn many_artist_info(artists:Vec<String>, auth_token: String) -> Vec<Result<APIResponse, String>>{
 
     let mut task_handles = vec![];
 
     // Creo un task por cada artista
     for artist in artists{
+        let auth_token_clone = auth_token.clone(); 
         task_handles.push(task::spawn(async move {
-            get_songs_by(artist.to_string()).await
+            get_songs_by(artist.to_string(), &auth_token_clone).await
         }));
     }
 
@@ -119,9 +116,13 @@ fn main(){
         .unwrap();
 
     // Lo hago bloqueante porque sin las credenciales no puedo hacer nada
-    //let auth_token = rt.block_on(auth::get_auth_token());
 
-    let responses = rt.block_on(many_artist_info(artists));
+    let auth_token = match rt.block_on(auth::get_auth_token()) {
+        Ok(token) => token,
+        Err(mss) => String::from("Error"),
+    };
+
+    let responses = rt.block_on(many_artist_info(artists, auth_token));
 
     for response in responses {
 

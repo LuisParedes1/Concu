@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use dotenv::dotenv;
 use reqwest;
 
@@ -6,29 +8,44 @@ use reqwest;
 
 
 /* Obtengo auth token a partir de las credenciales */
-pub async fn get_auth_token()-> String{
+pub async fn get_auth_token()-> Result<String, String>{
 
     dotenv().ok(); // Load env variables from .env file
 
+    let spotify_url = "https://accounts.spotify.com/api/token";
     let client_id = std::env::var("ClientID").expect("ClientID must be set.");
-    let cliente_secret = std::env::var("ClientSecret").expect("ClientSecret must be set.");
-    
+    let client_secret = std::env::var("ClientSecret").expect("ClientSecret must be set.");
+    let grant_type = "client_credentials";
+
     let client = reqwest::Client::new();
 
-    let var = client
-                            .put("https://accounts.spotify.com/api/token")
-                            .header(reqwest::header::CONTENT_TYPE, "application/x-www-form-urlencoded")
-                            .body(format!("grant_type=client_credentials&client_id={}&client_secret={}",
-                                    client_id, cliente_secret)
-                                )
-                            .send()
-                            .await;
+    let mut form_data = HashMap::new();
+    form_data.insert("grant_type", grant_type);
+    form_data.insert("client_id", &client_id);
+    form_data.insert("client_secret", &client_secret);
 
-    "".to_string()
-            
+    let response = client
+                                                .post(spotify_url)
+                                                .header(reqwest::header::CONTENT_TYPE, "application/x-www-form-urlencoded")
+                                                .form(&form_data)
+                                                .send()
+                                                .await;
+
+    match response {
+        Ok(response) =>{
+            match response.status().is_success() {
+                true => {  let response = response.text().await.unwrap();
+
+                            Ok(response.split(":").collect::<Vec<&str>>()[1].split(",").collect::<Vec<&str>>()[0].replace("\"", "") )
+                        },
+                false => {Err("Error getting auth token\n".to_string())}   
+            }
+        },
+        Err(error) => {
+            Err(format!("Error in request, {}", error.to_string()))
+        }
+    }          
 }
-
-// "grant_type=client_credentials&client_id=your-client-id&client_secret=your-client-secret"
 
 #[cfg(test)]
 
@@ -38,27 +55,36 @@ mod auth {
     use super::get_auth_token;
 
     #[test]
-    fn get_auth_returns_something() {
-        let result = super::get_auth_token();
-        assert!(!result.is_empty());
-    }
-
-    #[test]
     fn accesing_cliente_id_and_cliente_secret() {
         dotenv().ok();
 
         let client_id = std::env::var("ClientID").expect("ClientID must be set.");
-        let cliente_secret = std::env::var("ClientSecret").expect("ClientSecret must be set.");
-
-        print!("{} \n {}", client_id, cliente_secret);
-
+        let client_secret = std::env::var("ClientSecret").expect("ClientSecret must be set.");
         
         assert!(!client_id.is_empty());
-        assert!(!cliente_secret.is_empty());
+        assert!(!client_secret.is_empty());
     }
 
     #[test]
     fn auth_acceses_generates_token_id() {  
-        assert!(get_auth_token().is_empty());
+
+        let rt = tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()
+        .unwrap();
+
+        let response = rt.block_on(get_auth_token());
+
+        let access_token = match response {
+            Ok(response) => {
+                response
+            },
+            Err(err) => {
+                err
+            }
+        };
+
+        assert!(!access_token.contains("Error"));
+            
     }
 }
