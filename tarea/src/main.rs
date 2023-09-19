@@ -33,16 +33,13 @@ fn main() {
 
     let mut handles = vec![];
 
-    let rec0 = recursos.clone();
     // Algunas entidades "extraeran" (generaran aleatoriamente) oro
+    let rec0 = recursos.clone();
     handles.push(thread::spawn(move || loop {
         if let Ok(mut recursos) = rec0.write() {
             recursos[0].cantidad += 1;
-            //recursos[0].cantidad += thread_rng().gen_range(0, 3);
         }
-
-        thread::yield_now()
-        //thread::sleep(Duration::from_millis(1));
+        thread::yield_now();
     }));
 
     // Algunas entidades podran convertir oro en recursos (a gusto)
@@ -54,7 +51,7 @@ fn main() {
                 recursos[thread_rng().gen_range(1, 5)].cantidad += 1;
             }
         }
-        thread::yield_now()
+        thread::yield_now();
     }));
 
     // Otras entidades podran convertir combinaciones de recursos en + oro
@@ -75,7 +72,7 @@ fn main() {
                 recursos[0].cantidad += 1;
             }
         }
-        thread::yield_now()
+        thread::yield_now();
     }));
 
     // Otras entidades podran solamente consumir recursos
@@ -88,7 +85,7 @@ fn main() {
                 recursos[indice_rec].cantidad -= 1;
             }
         }
-        thread::yield_now()
+        thread::yield_now();
     }));
 
     // Periodicamente se reporta por pantalla el nivel de recursos y oro
