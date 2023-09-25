@@ -3,7 +3,16 @@ name = "tarea"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "solucion_1"
+path = "solucion_1/main.rs"
+
+
+[[bin]]
+name = "solucion_2"
+path = "solucion_2/main.rs"
+
 
 [dependencies]
 std-semaphore = "0.1"
