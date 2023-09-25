@@ -13,7 +13,7 @@ El Servidor es aquel que responde a los request
 - GET: The HTTP GET method is used to read (or retrieve) a representation of a resource.
 - POST: The POST verb is most often utilized to create new resources. In particular, it’s used to create subordinate resources. That is, subordinate to some other (e.g. parent) resource.
 - PUT: It is used for updating the capabilities.
-- PATCH: It is used to modify capabilities
+- PATCH: It is used to modify capabilities.
 - DELETE: It is used to delete a resource identified by a URI.
 
 Mas info [aca](https://www.geeksforgeeks.org/rest-api-introduction/)
@@ -29,3 +29,9 @@ Mas info sobre REST (en React) [aca](https://mis-notas.notion.site/REST-6fcee850
 `block_on` sirve como adaptador entre el mundo async y sync.
 
 Para poder hacer llamado a una funcion `async` desde una `sync` se debe usar `block_on` ya que una funcion `async` siempre devuelve un Future (asi tenga await adentro)
+
+---
+
+Debido a que cada `block_on` realiza un `move` entonces el cliente deberia crearse al inicio de la funcion `async` y luego hacer los multiples requests.
+
+Es decir, cuando termina la funcion `block_on`, el cliente creado se dropea y se pierde la conexion establecida.
