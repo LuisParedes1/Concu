@@ -1,3 +1,5 @@
+// Pag 125: Algorithm 6.11: Dining philosophers (second attempt)
+
 use std::{sync::Arc, thread, time::Duration, vec};
 use std_semaphore::Semaphore;
 
