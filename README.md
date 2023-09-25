@@ -9,3 +9,11 @@ Se utilizan cuando necesitamos sincronizar nuestro codigo
 # Notion
 
 Ver clases en [Notion](https://mis-notas.notion.site/Semana-5-6954a06a389842968fe7e69fe73c22b1?pvs=4)
+
+# Tarea
+
+Problema de los filosofos usando semaforos
+
+Ver [Notion](https://mis-notas.notion.site/Tarea-cbb9e56364964b03894375e12da73bae?pvs=4)
+
+[Codigo](./tarea/)

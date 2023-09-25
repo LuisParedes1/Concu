@@ -1,4 +1,10 @@
-// Ejemplo de Barrera
+/* Barreras
+
+Las barreras son utiles para tener un punto de sincronizacion entre todos los threads.
+
+Cuando el ultimo (thread lider) llegue a un cierto punto (a un .wait() especifico) se liberaran todos y el
+programa continuara su ejecucion.
+*/
 use std::sync::{Arc, Barrier};
 use std::thread;
 
