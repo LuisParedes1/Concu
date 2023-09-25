@@ -15,9 +15,11 @@ fn main() {
     const NUM_FILOSOFOS: usize = 5;
     let mut handles = vec![];
 
-    let habitaciones = Arc::new(Semaphore::new(4));
+    // Para evitar deadlocks, se impone que solo pueden haber NUM_FILOSOFOS - 1 filosofos en la habitacion
+    let habitaciones = Arc::new(Semaphore::new(NUM_FILOSOFOS as isize - 1));
 
     // Los tenedores son semaforos que indican si estan usados o no
+    // tenedor[i] es el tenedor del filosofo i e indica si esta siendo usado o no
     let tenedores = (0..NUM_FILOSOFOS)
         .map(|_| Arc::new(Semaphore::new(1)))
         .collect::<Vec<_>>();
@@ -30,17 +32,17 @@ fn main() {
             loop {
                 think(i);
 
-                arc_habitaciones.acquire(); // wait
+                arc_habitaciones.acquire(); // wait(room)
 
-                arc_tenedores[i].acquire(); // wait[i]
-                arc_tenedores[(i + 1) % 5].acquire(); // wait[i+1] == wait[(i+1) % 5]]
+                arc_tenedores[i].acquire(); // wait(fork[i])
+                arc_tenedores[(i + 1) % 5].acquire(); // wait(fork[i+1]) == wait(fork[(i+1) % 5])
 
                 eat(i);
 
-                arc_tenedores[i].release(); // signal[i]
-                arc_tenedores[(i + 1) % 5].release(); // signal[i+1] = wait[(i+1) % 5]]
+                arc_tenedores[i].release(); // signal(fork[i])
+                arc_tenedores[(i + 1) % 5].release(); // signal(fork[i+1]) = wait(fork[(i+1) % 5])
 
-                arc_habitaciones.release(); // signal
+                arc_habitaciones.release(); // signal(room)
             }
         }));
     }
