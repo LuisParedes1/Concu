@@ -3,7 +3,7 @@
     Es decir, se puede liberar recursos desde otro thread
 */
 
-use std::sync::Arc;
+use std::{sync::Arc, thread, time::Duration};
 use std_semaphore::Semaphore;
 
 fn main() {
