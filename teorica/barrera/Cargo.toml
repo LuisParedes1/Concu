@@ -3,6 +3,27 @@ name = "teorica"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "ejemplo1"
+path = "ejemplo1/main.rs"
+
+[[bin]]
+name = "ejemplo2"
+path = "ejemplo2/main.rs"
+
+[[bin]]
+name = "ejemplo3"
+path = "ejemplo3/main.rs"
+
+[[bin]]
+name = "ejemplo4"
+path = "ejemplo4/main.rs"
+
+[[bin]]
+name = "ejemplo5"
+path = "ejemplo5/main.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+std-semapthore = "0.1"
