@@ -11,4 +11,6 @@ filósofo toma un palito y el otro está ocupado, se quedará
 esperando, con el palito en la mano, hasta que pueda
 tomar el otro palito, para luego empezar a comer.
 
+![Problema Filosofos](image.png)
+
 [Notion](https://mis-notas.notion.site/Tarea-cbb9e56364964b03894375e12da73bae?pvs=4)
