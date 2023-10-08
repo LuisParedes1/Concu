@@ -1,11 +1,7 @@
-# Practicas de Concu
+# Semana 6 Redes de Petri
 
-Repos para la materia de [Tecnicas de Programacion Concurrente](https://concurrentes-fiuba.github.io/clases.html)
-
-# Practicas
-Las practicas de cada semana las guardo en su respectiva rama asi evitar conflictos con los .targets
-
-Todas las clases tambien van a estar en la rama "todas"
+Es una herramienta que se utiliza para modelizar el estado en el que se encuentran los threads y las transiciones entre estados.
 
 # Notion
-En el siguiente [Notion](https://mis-notas.notion.site/Programacion-Concurrente-f538e18363824708a760342066d792af?pvs=4) esta toda  teoria y lo que use para la materia.
+
+[Notion](https://mis-notas.notion.site/Semana-6-ffab96412bd949cd9d3c7ca59d38a887?pvs=4)
