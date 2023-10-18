@@ -1,6 +1,6 @@
 # Channels
 
-Seguir el :
+Seguir:
 
 
 > Do not communicate by sharing memory; instead, share memory by communicating.
@@ -14,7 +14,7 @@ Reglas en Rust
 - A travez de canales transfiero el ownership del elemento que envio
 por el canal (esta es la parte de “share memory by communicating”)
 
-Actores
+# Actores
 
 Estructura:
 
