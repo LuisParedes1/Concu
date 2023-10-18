@@ -20,7 +20,7 @@ Estructura:
 
 - Estructura Actor
 - Estructura Message
-- Handle<Message> para que el actor procese el Message
+- Handle < Message > para que el actor procese el Message
 
 
 # Notion
