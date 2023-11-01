@@ -1,5 +1,3 @@
-# Semana de Parcial
+# Semana 9 Concurrencia Distribuida: Práctica sobre Sockets y Exclusión Mutua distribuida
 
-Tuvimos el [parcial](https://mis-notas.notion.site/Parcial-2ef13e88697642ba8b932489251baa3d?pvs=4)
-
-No tuvimos teorica ni practica
+Notion [aca](https://www.notion.so/mis-notas/Semana-9-ca5d71e65dd34dedba6622b033b1942f?pvs=4#603ac0ec52354cc98f59f5d6424091bc)
