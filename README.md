@@ -6,9 +6,10 @@ Repos para la materia de [Tecnicas de Programacion Concurrente](https://concurre
 
 Las practicas de cada semana las guardo en su respectiva rama asi evitar conflictos con los .targets
 
-Todas las clases tambien van a estar en la rama "todas"
+Todas las clases tambien van a estar en la rama [todas](https://github.com/LuisParedes1/Concu/tree/todas)
 
 ## Indice
+
 - [Introduccion a Rust](https://github.com/LuisParedes1/Concu/tree/semana1)
 - [Fork-Join](https://github.com/LuisParedes1/Concu/tree/semana2)
 - [Async-Await](https://github.com/LuisParedes1/Concu/tree/semana3)
@@ -19,7 +20,6 @@ Todas las clases tambien van a estar en la rama "todas"
 - [Sockets en Rust](https://github.com/LuisParedes1/Concu/tree/semana9)
 - [Eleccion de Lider (Ring Token y Bully)](https://github.com/LuisParedes1/Concu/tree/semana_10)
 - [Transacciones y Testing](https://github.com/LuisParedes1/Concu/tree/semana_11)
-
 
 # Notion
 
