@@ -1,0 +1,10 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_channel-e1574ead1a706598.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lock.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/queue.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/sink_impl.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/oneshot.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_channel-e1574ead1a706598.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lock.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/queue.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/sink_impl.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/oneshot.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/lock.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/queue.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/mpsc/sink_impl.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.14/src/oneshot.rs:

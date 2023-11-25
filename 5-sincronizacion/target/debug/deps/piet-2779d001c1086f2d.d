@@ -1,0 +1,16 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/piet-2779d001c1086f2d.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/util.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/color.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/conv.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/error.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/font.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/gradient.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/image.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/null_renderer.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/render_context.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/shapes.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/text.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/piet-2779d001c1086f2d.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/util.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/color.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/conv.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/error.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/font.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/gradient.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/image.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/null_renderer.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/render_context.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/shapes.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/text.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/util.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/color.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/conv.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/error.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/font.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/gradient.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/image.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/null_renderer.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/render_context.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/shapes.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/piet-0.3.1/src/text.rs:

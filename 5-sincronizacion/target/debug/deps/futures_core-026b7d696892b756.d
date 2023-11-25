@@ -1,0 +1,11 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_core-026b7d696892b756.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/future.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/poll.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/atomic_waker.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_core-026b7d696892b756.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/future.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/poll.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/atomic_waker.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/future.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/stream.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/poll.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.14/src/task/__internal/atomic_waker.rs:

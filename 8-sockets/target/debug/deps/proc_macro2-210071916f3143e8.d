@@ -1,0 +1,12 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/8-sockets/target/debug/deps/proc_macro2-210071916f3143e8.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/marker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/parse.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/rcvec.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/detection.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/fallback.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/extra.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/wrapper.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/8-sockets/target/debug/deps/proc_macro2-210071916f3143e8.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/marker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/parse.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/rcvec.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/detection.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/fallback.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/extra.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/wrapper.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/marker.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/parse.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/rcvec.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/detection.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/fallback.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/extra.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.58/src/wrapper.rs:

@@ -1,0 +1,11 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_task-68db832f7d6323bd.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/spawn.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/future_obj.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/noop_waker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/arc_wake.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker_ref.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/futures_task-68db832f7d6323bd.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/spawn.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/future_obj.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/noop_waker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/arc_wake.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker_ref.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/spawn.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/future_obj.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/noop_waker.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/arc_wake.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.14/src/waker_ref.rs:

@@ -1,0 +1,10 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/3-async/target/debug/deps/futures_channel-af5a338688e5afae.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lock.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/queue.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/sink_impl.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/oneshot.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/3-async/target/debug/deps/futures_channel-af5a338688e5afae.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lock.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/queue.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/sink_impl.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/oneshot.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/lock.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/queue.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/mpsc/sink_impl.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.15/src/oneshot.rs:

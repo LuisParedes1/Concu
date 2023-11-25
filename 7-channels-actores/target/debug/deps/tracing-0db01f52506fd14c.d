@@ -1,0 +1,13 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/7-channels-actores/target/debug/deps/tracing-0db01f52506fd14c.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/7-channels-actores/target/debug/deps/tracing-0db01f52506fd14c.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs:

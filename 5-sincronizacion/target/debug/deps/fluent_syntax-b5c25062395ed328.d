@@ -1,0 +1,10 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/fluent_syntax-b5c25062395ed328.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/ast.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/errors.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/ftlstream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/unicode.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/fluent_syntax-b5c25062395ed328.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/ast.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/errors.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/ftlstream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/unicode.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/ast.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/errors.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/parser/ftlstream.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/fluent-syntax-0.9.3/src/unicode.rs:

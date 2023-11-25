@@ -1,0 +1,16 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/7-channels-actores/target/debug/deps/prost_build-d88fdf817d0195d4.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ast.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/code_generator.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/extern_paths.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ident.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/message_graph.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/path.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/7-channels-actores/target/debug/deps/libprost_build-d88fdf817d0195d4.rlib: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ast.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/code_generator.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/extern_paths.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ident.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/message_graph.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/path.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/7-channels-actores/target/debug/deps/prost_build-d88fdf817d0195d4.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ast.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/code_generator.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/extern_paths.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ident.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/message_graph.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/path.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ast.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/code_generator.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/extern_paths.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/ident.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/message_graph.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/src/path.rs:
+
+# env-dep:PROTOC=/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/third-party/protobuf/protoc-linux-x86_64
+# env-dep:PROTOC_INCLUDE=/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.8.0/third-party/protobuf/include

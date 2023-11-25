@@ -1,0 +1,14 @@
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/png-8028f3eaf957883c.rmeta: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/chunk.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/common.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/zlib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/encoder.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/filter.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/traits.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/utils.rs
+
+/home/luis/Documents/FIUBA/concu/ejemplos-concurrentes/practicas/5-sincronizacion/target/debug/deps/png-8028f3eaf957883c.d: /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/lib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/chunk.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/common.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/mod.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/stream.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/zlib.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/encoder.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/filter.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/traits.rs /home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/utils.rs
+
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/lib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/chunk.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/common.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/mod.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/stream.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/decoder/zlib.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/encoder.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/filter.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/traits.rs:
+/home/luis/.cargo/registry/src/github.com-1ecc6299db9ec823/png-0.16.8/src/utils.rs:
